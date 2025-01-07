@@ -4,3 +4,28 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/modal';
+@use 'layout/rm-match';
+
+#root{
+    max-width: 420px;
+    height: 100dvh;
+    margin: auto;
+    box-shadow: 0 0 10px 0 rgba(v.$black-950, 0.1);
+}
+
+.btn-wrap{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.col{
+    &-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+.hasScroll{
+    overflow-y: auto;
+}

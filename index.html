@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <meta property="og:url" content="https://matemate.co.kr/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MATEMATE" />
@@ -28,11 +28,143 @@
     <script src="./src/assets/scripts/common.js"></script>
 </head>
 <body>
-    <div>
+    <div id="root">
         <header></header>
-        <section></section>
+        <section>
+            <div class="rm-match-wrap">
+                <div class="rm-match-section" style="display: none;">
+                    <h2 class="title">룸메이트 매칭을 위해
+                        <br/>정보를 입력해주세요!
+                    </h2>
+                    <div>
+                        <div class="ipt">
+                            <div><input type="text" placeholder="닉네임"></div>
+                            <div><input type="date" placeholder="생년월일"></div>
+                            <div>
+                                <select name="user-major">
+                                    <option value="none" selected hidden>학과</option>
+                                    <optgroup label="SW대학">
+                                        <option value="sw-computer">컴퓨터공학부-컴퓨터공학전공</option>
+                                        <option value="sw-software">컴퓨터공학부-소프트웨어전공</option>
+                                        <option value="sw-gameengi">게임공학과</option>
+                                        <option value="sw-artifici">인공지능학과</option>
+                                    </optgroup>
+                                    <optgroup label="IT반도체융햡대학">
+                                        <option value="it-electron">전자공학부-전자공학전공</option>
+                                        <option value="it-embedded">전자공학부-임베디드시스템전공</option>
+                                        <option value="it-nanosemi">반도체공학부-나노반도체공학전공</option>
+                                        <option value="it-semicons">반도체공학부-반도체시스템전공</option>
+                                    </optgroup>
+                                    <optgroup label="스마트기계융합대학">
+                                        <option value="sm-mechaeng">기계공학과</option>
+                                        <option value="sm-mechades">기계설계공학부-기계설계전공</option>
+                                        <option value="sm-mobility">기계설계공학부-지능형모빌리티전공</option>
+                                        <option value="sm-mechatro">메카트로닉스공학부-메카트로닉스전공</option>
+                                        <option value="sm-airobots">메카트로닉스공학부-AI로봇전공</option>
+                                    </optgroup>
+                                    <optgroup label="첨단융합대학">
+                                        <option value="ht-newmater">신소재공학과</option>
+                                        <option value="ht-biochemi">생명화학공학과</option>
+                                        <option value="ht-powerapp">에너지·전기공학부-전력응용시스템전공</option>
+                                        <option value="ht-futureen">에너지·전기공학부-미래에너지시스템전공</option>
+                                    </optgroup>
+                                    <optgroup label="경영학부">
+                                        <option value="mg-managemt">경영학전공</option>
+                                        <option value="mg-datascin">데이터사이언스경영전공</option>
+                                        <option value="mg-itmanage">IT경영전공</option>
+                                    </optgroup>
+                                    <optgroup label="디자인공학부">
+                                        <option value="de-inderdes">산업디자인공학전공</option>
+                                        <option value="de-mediades">미디어디자인공학전공</option>
+                                    </optgroup>
+                                    <optgroup label="미래대학">
+                                        <option value="fu-converge">융합전공</option>
+                                        <option value="fu-fremajor">자유전공학부</option>
+                                    </optgroup>
+                                    <optgroup label="기업인재대학">
+                                        <option value="cp-industry">산학협력학부</option>
+                                        <option value="cp-workstud">일학습병행학부</option>
+                                        <option value="cp-earlyemp">조기취업학부</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="btn bg-primary">다음</button>
+                    </div>
+                </div>
+                <div class="rm-match-section">
+                    <h2 class="title">본인의 학번을
+                        <br/>알려주세요!
+                    </h2>
+                    <div class="hasScroll">
+                        <div class="ipt">
+                            <div class="col-2">
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>18</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox" checked>
+                                    <p>
+                                        <span>19</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>20</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>21</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>22</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>23</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>24</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>25</span>
+                                    </p>
+                                </label>
+                                <label class="type-shape">
+                                    <input type="checkbox">
+                                    <p>
+                                        <span>무관</span>
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="btn bg-primary">다음</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer></footer>
-        <div class="modal"></div>
     </div>
 </body>
 </html>

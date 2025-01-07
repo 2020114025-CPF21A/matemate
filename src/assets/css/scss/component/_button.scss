@@ -1,0 +1,24 @@
+@charset 'utf-8';
+@use '../index' as v;
+
+.btn{
+    display: inline-block;
+    position: relative;
+    height: 58px;
+    padding: 8px 24px;
+    border-radius: 10px;
+    outline: unset;
+    border: 1px solid v.$black-200;
+    background-color: v.$white;
+    font: v.$b1-400;
+    color: v.$black-950;
+    letter-spacing: -0.01em;
+
+    &.bg{
+        &-primary{
+            background-color: v.$primary-500;
+            border-color: v.$primary-500;
+            color: v.$white;
+        }
+    }
+}

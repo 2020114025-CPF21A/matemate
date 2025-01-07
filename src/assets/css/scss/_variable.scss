@@ -8,8 +8,19 @@ $red: red;
 // 폰트들
 $font-main: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
+    // 제목
+    $h1-700             : 700 28px/32px $font-main;
+    $h2-600             : 600 32px/45.2px $font-main;
+
+    // 본문
+    $b1-400             : 400 16px/26px $font-main;
+
+    // 버튼
+    $btn2-600           : 600 20px/26px $font-main;
+
 // 색상들
     // 기본색상
+        $white          : #ffffff;
 
     // 강조색상
         $primary-50     : #f0f5fe;
@@ -50,13 +61,29 @@ $font-main: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont
         $black-900      : #3d3d3d;
         $black-950      : #111111;  // 주 컬러
 
-
     // 상태
-    $success      : #32C771;
-    $warning      : #FFAA00;
-    $error        : #EB5757;
+        $success        : #32C771;
+        $warning        : #FFAA00;
+        $error          : #EB5757;
+
+        $set-black-800  : invert(24%) sepia(0%) saturate(43%) hue-rotate(143deg) brightness(94%) contrast(83%);
 
 
-    
-    
-    
+        $delay          : 0.2s;
+
+    @mixin trueSize($setSize){
+        display: block;
+        width: $setSize + px !important;
+        height: $setSize + px !important;
+        aspect-ratio: 1;
+    }
+
+
+    @mixin setIcon($setIcon, $setSize){
+        @include trueSize($setSize);
+        background: url($url-icon + '#{$setSize}/#{$setIcon}') center no-repeat;
+    }
+
+    @mixin setBg($setIcon, $setSize){
+        background: url($url-icon + '#{$setSize}/#{$setIcon}') center no-repeat;
+    }

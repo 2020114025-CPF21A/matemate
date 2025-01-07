@@ -114,4 +114,137 @@ http://scripts.sil.org/OFL
   font-weight: 100;
   font-display: swap;
   src: local("Pretendard Thin"), url("/src/assets/font/Pretendard/Pretendard-Thin.otf") format("opentype");
+}
+.ipt {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ipt input,
+.ipt select,
+.ipt textarea {
+  position: relative;
+  width: 100%;
+  height: 62px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  outline: unset;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  font: 400 16px/26px "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #111111;
+  box-sizing: border-box;
+  appearance: none;
+  resize: none;
+  letter-spacing: -0.01em;
+}
+.ipt input::placeholder,
+.ipt select::placeholder,
+.ipt textarea::placeholder {
+  color: #454545;
+}
+.ipt input[type=date] {
+  background: url("/src/assets/icons/20/ic-input-calendar.svg") center no-repeat;
+  background-position: 16px;
+  padding-left: 50px;
+}
+.ipt input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+}
+.ipt select {
+  background: url("/src/assets/icons/16/ic-input-arrow-bottom.svg") center no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+.ipt label {
+  cursor: pointer;
+}
+.ipt label input {
+  display: none;
+}
+.ipt label.type-shape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  height: 92px;
+  font: 600 32px/45.2px "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #111111;
+  letter-spacing: -0.025em;
+  background-color: #f6f6f6;
+  transition: 0.2s;
+}
+.ipt label.type-shape:has(input:checked) {
+  background-color: #c2d9fb;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  height: 58px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  outline: unset;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  font: 400 16px/26px "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #111111;
+  letter-spacing: -0.01em;
+}
+.btn.bg-primary {
+  background-color: #447eed;
+  border-color: #447eed;
+  color: #ffffff;
+}
+
+.rm-match-wrap .title {
+  flex: 0 0 162px;
+  font: 700 28px/32px "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #111111;
+  align-content: center;
+}
+.rm-match-wrap .title + div {
+  flex: 1;
+}
+.rm-match-section {
+  padding: 32px 24px 24px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.rm-match-section .btn-wrap {
+  padding-top: 20px;
+}
+.rm-match-section .btn-wrap .btn {
+  flex: 1;
+}
+
+#root {
+  max-width: 420px;
+  height: 100dvh;
+  margin: auto;
+  box-shadow: 0 0 10px 0 rgba(17, 17, 17, 0.1);
+}
+
+.btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.hasScroll {
+  overflow-y: auto;
 }/*# sourceMappingURL=style.css.map */
