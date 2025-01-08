@@ -75,6 +75,22 @@
                 &:has(input:checked){
                     background-color: v.$primary-200;
                 }
+
+                &:has(img){
+                    padding: 24px 12px 36px;
+                    height: auto;
+                    gap: 4px;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        font: v.$btn3-600;
+                    }
+
+                    &:has(input:checked){
+                        background-color: v.$primary-100;
+                    }
+                }
             }
         }
     }
