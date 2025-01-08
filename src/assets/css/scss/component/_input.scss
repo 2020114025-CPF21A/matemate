@@ -55,6 +55,7 @@
     // 나중에 기본 radio / checkbox 추가하면서 리팩토링 예정
     label{
         cursor: pointer;
+        transition: v.$delay;
         input{
             display: none;
         }
@@ -70,7 +71,6 @@
                 color: v.$black-950;
                 letter-spacing: -0.025em;
                 background-color: v.$black-50;
-                transition: v.$delay;
 
                 &:has(input:checked){
                     background-color: v.$primary-200;
@@ -119,6 +119,27 @@
                     font: v.$btn2-600;
                     &:empty{
                         display: none;
+                    }
+                }
+            }
+            &-radio{
+                padding: 24px;
+                border: 1px solid v.$black-100;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-radius: 16px;
+                &::after{
+                    content: "";
+                    display: block;
+                    @include v.setIcon('ic-radio.svg', 22);
+                    margin-left: auto;
+                }
+                &:has(input:checked){
+                    background-color: v.$primary-100;
+                    border-color: v.$primary-100;
+                    &::after{
+                        @include v.setIcon('ic-radio-active.svg', 22);
                     }
                 }
             }
