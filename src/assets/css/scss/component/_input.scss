@@ -129,6 +129,8 @@
                 display: flex;
                 align-items: center;
                 border-radius: 16px;
+                font: v.$btn3-600;
+                color: v.$black-950;
                 &::after{
                     content: "";
                     display: block;

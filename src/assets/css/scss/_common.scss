@@ -3,3 +3,27 @@
 
 @use 'component/input';
 @use 'component/button';
+
+.dscpt-information{
+    position: relative;
+    font: v.$b1-400;
+    color: v.$black-600;
+    padding-top: 30px;
+    margin-top: 16px; // 임시로 넣은거
+    &::before{
+        content: "";
+        position: absolute;
+        @include v.setIcon('ic-arrow-right', 18); // 임시로 넣은거
+        background-color: red;
+        top: 3px;
+        left: 0;
+    }
+    &::after{
+        content: "정보";
+        position: absolute;
+        font: v.$btn3-600;
+        color: v.$black-900;
+        top: 0;
+        left: 20px;
+    }
+}
