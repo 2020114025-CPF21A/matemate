@@ -91,6 +91,20 @@
                         background-color: v.$primary-100;
                     }
                 }
+
+                &:has(strong){
+                    padding: 12px 14px 16px;
+                    font: v.$btn1-600;
+                    p{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    span{
+                        font: v.$c1-500;
+                        color: v.$black-400;
+                    }
+                }
             }
         }
     }

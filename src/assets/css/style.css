@@ -198,6 +198,19 @@ http://scripts.sil.org/OFL
 .ipt label.type-shape:has(img):has(input:checked) {
   background-color: #dde9fc;
 }
+.ipt label.type-shape:has(strong) {
+  padding: 12px 14px 16px;
+  font: 700 36px/45px "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.ipt label.type-shape:has(strong) p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ipt label.type-shape:has(strong) span {
+  font: 500 12px/120% "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: #888888;
+}
 
 .btn {
   display: inline-block;
