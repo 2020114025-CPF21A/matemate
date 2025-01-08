@@ -31,1213 +31,1215 @@
     <div id="root">
         <header></header>
         <section>
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
-                <div class="rm-match-wrap swiper-wrapper">
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">룸메이트 매칭을 위해
-                            <br/>정보를 입력해주세요!
-                        </h2>
-                        <div>
-                            <div class="ipt">
-                                <div><input type="text" name="st-nicknm" placeholder="닉네임"></div>
-                                <div><input type="test" name="st-name" placeholder="이름"></div>
-                                <div><input type="date" name="st-birth" placeholder="생년월일"></div>
-                                <div>
-                                    <select name="st-major">
-                                        <option value="none" selected hidden>학과</option>
-                                        <optgroup label="SW대학">
-                                            <option value="sw-computer">컴퓨터공학부-컴퓨터공학전공</option>
-                                            <option value="sw-software">컴퓨터공학부-소프트웨어전공</option>
-                                            <option value="sw-gameengi">게임공학과</option>
-                                            <option value="sw-artifici">인공지능학과</option>
-                                        </optgroup>
-                                        <optgroup label="IT반도체융햡대학">
-                                            <option value="it-electron">전자공학부-전자공학전공</option>
-                                            <option value="it-embedded">전자공학부-임베디드시스템전공</option>
-                                            <option value="it-nanosemi">반도체공학부-나노반도체공학전공</option>
-                                            <option value="it-semicons">반도체공학부-반도체시스템전공</option>
-                                        </optgroup>
-                                        <optgroup label="스마트기계융합대학">
-                                            <option value="sm-mechaeng">기계공학과</option>
-                                            <option value="sm-mechades">기계설계공학부-기계설계전공</option>
-                                            <option value="sm-mobility">기계설계공학부-지능형모빌리티전공</option>
-                                            <option value="sm-mechatro">메카트로닉스공학부-메카트로닉스전공</option>
-                                            <option value="sm-airobots">메카트로닉스공학부-AI로봇전공</option>
-                                        </optgroup>
-                                        <optgroup label="첨단융합대학">
-                                            <option value="ht-newmater">신소재공학과</option>
-                                            <option value="ht-biochemi">생명화학공학과</option>
-                                            <option value="ht-powerapp">에너지·전기공학부-전력응용시스템전공</option>
-                                            <option value="ht-futureen">에너지·전기공학부-미래에너지시스템전공</option>
-                                        </optgroup>
-                                        <optgroup label="경영학부">
-                                            <option value="mg-managemt">경영학전공</option>
-                                            <option value="mg-datascin">데이터사이언스경영전공</option>
-                                            <option value="mg-itmanage">IT경영전공</option>
-                                        </optgroup>
-                                        <optgroup label="디자인공학부">
-                                            <option value="de-inderdes">산업디자인공학전공</option>
-                                            <option value="de-mediades">미디어디자인공학전공</option>
-                                        </optgroup>
-                                        <optgroup label="미래대학">
-                                            <option value="fu-converge">융합전공</option>
-                                            <option value="fu-fremajor">자유전공학부</option>
-                                        </optgroup>
-                                        <optgroup label="기업인재대학">
-                                            <option value="cp-industry">산학협력학부</option>
-                                            <option value="cp-workstud">일학습병행학부</option>
-                                            <option value="cp-earlyemp">조기취업학부</option>
-                                        </optgroup>
-                                    </select>
+            <form action="./successData" method="post">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="rm-match-wrap swiper-wrapper">
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">룸메이트 매칭을 위해
+                                <br/>정보를 입력해주세요!
+                            </h2>
+                            <div>
+                                <div class="ipt">
+                                    <div><input type="text" name="st-nicknm" placeholder="닉네임"></div>
+                                    <div><input type="test" name="st-name" placeholder="이름"></div>
+                                    <div><input type="date" name="st-birth" placeholder="생년월일"></div>
+                                    <div>
+                                        <select name="st-major">
+                                            <option value="none" selected hidden>학과</option>
+                                            <optgroup label="SW대학">
+                                                <option value="sw-computer">컴퓨터공학부-컴퓨터공학전공</option>
+                                                <option value="sw-software">컴퓨터공학부-소프트웨어전공</option>
+                                                <option value="sw-gameengi">게임공학과</option>
+                                                <option value="sw-artifici">인공지능학과</option>
+                                            </optgroup>
+                                            <optgroup label="IT반도체융햡대학">
+                                                <option value="it-electron">전자공학부-전자공학전공</option>
+                                                <option value="it-embedded">전자공학부-임베디드시스템전공</option>
+                                                <option value="it-nanosemi">반도체공학부-나노반도체공학전공</option>
+                                                <option value="it-semicons">반도체공학부-반도체시스템전공</option>
+                                            </optgroup>
+                                            <optgroup label="스마트기계융합대학">
+                                                <option value="sm-mechaeng">기계공학과</option>
+                                                <option value="sm-mechades">기계설계공학부-기계설계전공</option>
+                                                <option value="sm-mobility">기계설계공학부-지능형모빌리티전공</option>
+                                                <option value="sm-mechatro">메카트로닉스공학부-메카트로닉스전공</option>
+                                                <option value="sm-airobots">메카트로닉스공학부-AI로봇전공</option>
+                                            </optgroup>
+                                            <optgroup label="첨단융합대학">
+                                                <option value="ht-newmater">신소재공학과</option>
+                                                <option value="ht-biochemi">생명화학공학과</option>
+                                                <option value="ht-powerapp">에너지·전기공학부-전력응용시스템전공</option>
+                                                <option value="ht-futureen">에너지·전기공학부-미래에너지시스템전공</option>
+                                            </optgroup>
+                                            <optgroup label="경영학부">
+                                                <option value="mg-managemt">경영학전공</option>
+                                                <option value="mg-datascin">데이터사이언스경영전공</option>
+                                                <option value="mg-itmanage">IT경영전공</option>
+                                            </optgroup>
+                                            <optgroup label="디자인공학부">
+                                                <option value="de-inderdes">산업디자인공학전공</option>
+                                                <option value="de-mediades">미디어디자인공학전공</option>
+                                            </optgroup>
+                                            <optgroup label="미래대학">
+                                                <option value="fu-converge">융합전공</option>
+                                                <option value="fu-fremajor">자유전공학부</option>
+                                            </optgroup>
+                                            <optgroup label="기업인재대학">
+                                                <option value="cp-industry">산학협력학부</option>
+                                                <option value="cp-workstud">일학습병행학부</option>
+                                                <option value="cp-earlyemp">조기취업학부</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
+                        <!-- 학번 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">본인의 학번을
+                                <br/>알려주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>18</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id" checked>
+                                            <p>
+                                                <span>19</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>20</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>21</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>22</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>23</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>24</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>25</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-id">
+                                            <p>
+                                                <span>기타</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- 학번 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">본인의 학번을
-                            <br/>알려주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>18</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id" checked>
-                                        <p>
-                                            <span>19</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>20</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>21</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>22</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>23</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>24</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
-                                            <span>25</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-id">
-                                        <p>
+                        <!-- 성별 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">성별은
+                                <br/>어떻게 되시나요?
+                            </h2>
+                            <div>
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-gender">
+                                            <img src="/src/assets/images/ic-gender-0.png" alt="">
+                                            <p>
+                                                <span>남자</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-gender" checked>
+                                            <img src="/src/assets/images/ic-gender-1.png" alt="">
+                                            <p>
+                                                <span>여자</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- MBTI -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">본인의 MBTI을
+                                <br/>선택해주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-en" value="E" checked>
+                                            <p>
+                                                <strong>E</strong>
+                                                <span>외향형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-en" value="I">
+                                            <p>
+                                                <strong>I</strong>
+                                                <span>내향형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-ns" value="S">
+                                            <p>
+                                                <strong>S</strong>
+                                                <span>감각형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-ns" value="N" checked>
+                                            <p>
+                                                <strong>N</strong>
+                                                <span>직관형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-tf" value="T" checked>
+                                            <p>
+                                                <strong>T</strong>
+                                                <span>사고형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-tf" value="F">
+                                            <p>
+                                                <strong>F</strong>
+                                                <span>감정형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-jp" value="J" checked>
+                                            <p>
+                                                <strong>J</strong>
+                                                <span>판단형</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-mbti-jp" value="P">
+                                            <p>
+                                                <strong>P</strong>
+                                                <span>인식형</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 취미 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">취미를
+                                <br/>선택해주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>음악듣기</span>
+                                            <i>🎧</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>사진 촬영</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>야구</span>
+                                            <i>⚾</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>헬스</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>K-pop</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>여행</span>
+                                            <i>✈️</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>다이어트</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>게임</span>
+                                            <i>🕹️</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>애니</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>등산</span>
+                                            <i>🥾</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>레저</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>종교</span>
+                                            <i>🙏</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>공연 관람</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>축구</span>
+                                            <i>⚽</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>전시회 관람</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>요리</span>
+                                            <i>🍳</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>덕질</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>영화</span>
+                                            <i>📽️</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>베이킹</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>공부</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>자전거</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>캠핑</span>
+                                            <i>🏕️</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>놀러가기</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>댄스</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>쇼핑</span>
+                                            <i>🛒</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>술</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>대화하기</span>
+                                            <i>💬</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>산책</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>노래부르기</span>
+                                            <i>🎤</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>웹툰</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>카페가기</span>
+                                            <i>🥤</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>드라마</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>독서</span>
+                                            <i>📖</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>클라이밍</span>
+                                            <i>🧗🏻</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>반려동물</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>그림그리기</span>
+                                            <i>🎨</i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>피트니스</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>드라이브</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>재테크</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>자기계발</span>
+                                            <i></i>
+                                        </label>
+                                        <label class="type-chip">
+                                            <input type="checkbox" name="st-hobby">
+                                            <span>추가하기</span>
+                                            <i></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 긱사건물 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">살고싶은 기숙사 건물을
+                                <br/>선택해 주세요!
+                            </h2>
+                            <div>
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-building">
+                                            <img src="/src/assets/images/ic-gender-0.png" alt="">
+                                            <p>
+                                                <span>남자</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-building" checked>
+                                            <img src="/src/assets/images/ic-gender-1.png" alt="">
+                                            <p>
+                                                <span>여자</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 거주기간 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">거주기간을
+                                <br/>선택해주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-range">
+                                            <span>2개월</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-range">
+                                            <span>4개월</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-range">
+                                            <span>6개월</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dscpt-information">
+                                <p>1학년만 TIP 생활관 4, 6, 12개월
+                                    <br/>제 2 생활관은 6, 12개월만 가능합니다.
+                                </p>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 룸 유형 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">룸 유형을
+                                <br/>선택해 주세요!
+                            </h2>
+                            <div>
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-roomtype" checked>
+                                            <img src="/src/assets/images/ic-gender-0.png" alt="">
+                                            <p>
+                                                <span>2인실</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-roomtype">
+                                            <img src="/src/assets/images/ic-gender-1.png" alt="">
+                                            <p>
+                                                <span>4인실</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 흡연여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">흡연여부를
+                                <br/>선택해 주세요!
+                            </h2>
+                            <div>
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-roomtype" checked>
+                                            <img src="/src/assets/images/ic-gender-0.png" alt="">
+                                            <p>
+                                                <span>흡연</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-roomtype">
+                                            <img src="/src/assets/images/ic-gender-1.png" alt="">
+                                            <p>
+                                                <span>비흡연</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 취침시간 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">취침시간을
+                                <br/>선택해주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>이전</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>22시 ~ 23시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>23시 ~ 24시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>24시 ~ 01시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>01시 ~ 02시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>02시 ~ 03시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>이후</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 기상시간 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">기상시간을
+                                <br/>선택해주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>이전</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>06시 ~ 07시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>07시 ~ 08시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>08시 ~ 09시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>09시 ~ 10시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>10시 ~ 11시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-wake">
+                                            <span>이후</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 배달 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">배달을 얼마나
+                                <br/>자주 시켜드시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-freq">
+                                            <span>주 0회</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-freq">
+                                            <span>주 1회 ~ 주 2회</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-freq">
+                                            <span>주 3회 ~ 주 4회</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-freq">
+                                            <span>주 5회 이상</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-freq">
+                                            <span>협의가능</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 배달시간 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">배달을 주로
+                                <br/>어느 시간대에 받으시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>없음</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>0시 ~ 4시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>4시 ~ 8시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>8시 ~ 12시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>12시 ~ 16시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>16시 ~ 20시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>20시 ~ 24시</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-dlv-time">
+                                            <span>협의가능</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 룸 내 식사 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">방 안 식사 여부에 대해를
+                                <br/>알려주세요!
+                            </h2>
+                            <div>
+                                <div class="ipt">
+                                    <div class="col-2">
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-meals" checked>
+                                            <img src="/src/assets/images/ic-gender-0.png" alt="">
+                                            <p>
+                                                <span>방 안 식사</span>
+                                            </p>
+                                        </label>
+                                        <label class="type-shape">
+                                            <input type="radio" name="st-meals">
+                                            <img src="/src/assets/images/ic-gender-1.png" alt="">
+                                            <p>
+                                                <span>방 안 식사 금물</span>
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dscpt-information">
+                                <p>배달 주문 후 기숙사 방 안에서 식사 여부에 대해 체크해주세요</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 샤워시간 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">배달을 주로
+                                <br/>어느 시간대에 받으시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-shower">
+                                            <span>아침</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-shower">
+                                            <span>점심</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-shower">
+                                            <span>저녁</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-range">
+                                <input type="range" name="st-time-shower" list="st-time-shower-data"/>
+                                <datalist id="st-time-shower-data">
+                                    <option value="0" label="0"></option>
+                                    <option value="25" label="25"></option>
+                                    <option value="50" label="50"></option>
+                                    <option value="75" label="75"></option>
+                                    <option value="100" label="100"></option>
+                                </datalist>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 긱사 내 게임 여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">기숙사 방 안
+                                <br/>게임 여부를 알려주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-game">
+                                            <span>게임을 한다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-game">
+                                            <span>게임을 가끔 한다</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-game">
+                                            <span>게임을 안한다.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-range">
+                                <p class="title">내가 생각하는 나의 소음 정도는?</p>
+                                <p class="dscpt">*소음 : 기계식 키보드, 무분별한 통화</p>
+                                <input type="range" name="st-time-game" list="st-time-game-data"/>
+                                <datalist id="st-time-game-data">
+                                    <option value="0" label="0"></option>
+                                    <option value="25" label="25"></option>
+                                    <option value="50" label="50"></option>
+                                    <option value="75" label="75"></option>
+                                    <option value="100" label="100"></option>
+                                </datalist>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 긱사 내 디코 여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">기숙사 방 안
+                                <br/>디스코드(음성 서비스)
+                                <br/>사용 여부를 알려주세요!
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-discord">
+                                            <span>디스코드(음성 서비스)를 한다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-discord">
+                                            <span>디스코드(음성 서비스)를 가끔 한다</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-discord">
+                                            <span>디스코드(음성 서비스)를 안한다.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-range">
+                                <p class="title">내가 생각하는 나의 소음 정도는?</p>
+                                <p class="dscpt">*소음 : 기계식 키보드, 무분별한 통화</p>
+                                <input type="range" name="st-time-discord" list="st-time-discord-data"/>
+                                <datalist id="st-time-discord-data">
+                                    <option value="0" label="0"></option>
+                                    <option value="25" label="25"></option>
+                                    <option value="50" label="50"></option>
+                                    <option value="75" label="75"></option>
+                                    <option value="100" label="100"></option>
+                                </datalist>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
+                            </div>
+                        </div>
+                        <!-- 더위 여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">더위는
+                                <br/>얼마나 타시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-hot">
+                                            <span>더위를 탄다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-hot">
+                                            <span>더위를 조금 탄다</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-hot">
+                                            <span>더위를 안탄다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-hot">
                                             <span>기타</span>
-                                        </p>
-                                    </label>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 성별 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">성별은
-                            <br/>어떻게 되시나요?
-                        </h2>
-                        <div>
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-gender">
-                                        <img src="/src/assets/images/ic-gender-0.png" alt="">
-                                        <p>
-                                            <span>남자</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-gender" checked>
-                                        <img src="/src/assets/images/ic-gender-1.png" alt="">
-                                        <p>
-                                            <span>여자</span>
-                                        </p>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
                             </div>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- MBTI -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">본인의 MBTI을
-                            <br/>선택해주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-en" value="E" checked>
-                                        <p>
-                                            <strong>E</strong>
-                                            <span>외향형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-en" value="I">
-                                        <p>
-                                            <strong>I</strong>
-                                            <span>내향형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-ns" value="S">
-                                        <p>
-                                            <strong>S</strong>
-                                            <span>감각형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-ns" value="N" checked>
-                                        <p>
-                                            <strong>N</strong>
-                                            <span>직관형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-tf" value="T" checked>
-                                        <p>
-                                            <strong>T</strong>
-                                            <span>사고형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-tf" value="F">
-                                        <p>
-                                            <strong>F</strong>
-                                            <span>감정형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-jp" value="J" checked>
-                                        <p>
-                                            <strong>J</strong>
-                                            <span>판단형</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-mbti-jp" value="P">
-                                        <p>
-                                            <strong>P</strong>
-                                            <span>인식형</span>
-                                        </p>
-                                    </label>
+                        <!-- 추위 여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">추위는
+                                <br/>얼마나 타시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-cold">
+                                            <span>추위를 탄다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-cold">
+                                            <span>추위를 조금 탄다</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-cold">
+                                            <span>추위를 안탄다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-cold">
+                                            <span>기타</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 취미 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">취미를
-                            <br/>선택해주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>음악듣기</span>
-                                        <i>🎧</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>사진 촬영</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>야구</span>
-                                        <i>⚾</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>헬스</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>K-pop</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>여행</span>
-                                        <i>✈️</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>다이어트</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>게임</span>
-                                        <i>🕹️</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>애니</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>등산</span>
-                                        <i>🥾</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>레저</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>종교</span>
-                                        <i>🙏</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>공연 관람</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>축구</span>
-                                        <i>⚽</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>전시회 관람</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>요리</span>
-                                        <i>🍳</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>덕질</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>영화</span>
-                                        <i>📽️</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>베이킹</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>공부</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>자전거</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>캠핑</span>
-                                        <i>🏕️</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>놀러가기</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>댄스</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>쇼핑</span>
-                                        <i>🛒</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>술</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>대화하기</span>
-                                        <i>💬</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>산책</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>노래부르기</span>
-                                        <i>🎤</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>웹툰</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>카페가기</span>
-                                        <i>🥤</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>드라마</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>독서</span>
-                                        <i>📖</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>클라이밍</span>
-                                        <i>🧗🏻</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>반려동물</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>그림그리기</span>
-                                        <i>🎨</i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>피트니스</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>드라이브</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>재테크</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>자기계발</span>
-                                        <i></i>
-                                    </label>
-                                    <label class="type-chip">
-                                        <input type="checkbox" name="st-hobby">
-                                        <span>추가하기</span>
-                                        <i></i>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
                             </div>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 긱사건물 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">살고싶은 기숙사 건물을
-                            <br/>선택해 주세요!
-                        </h2>
-                        <div>
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-building">
-                                        <img src="/src/assets/images/ic-gender-0.png" alt="">
-                                        <p>
-                                            <span>남자</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-building" checked>
-                                        <img src="/src/assets/images/ic-gender-1.png" alt="">
-                                        <p>
-                                            <span>여자</span>
-                                        </p>
-                                    </label>
+                        <!-- 잠귀 여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">잠귀는
+                                <br/>얼마나 밝으시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>잠귀가 밝다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>잠귀가 조금 밝다</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>잠귀가 안밝다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep">
+                                            <span>기타</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 거주기간 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">거주기간을
-                            <br/>선택해주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-range">
-                                        <span>2개월</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-range">
-                                        <span>4개월</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-range">
-                                        <span>6개월</span>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
                             </div>
                         </div>
-                        <div class="dscpt-information">
-                            <p>1학년만 TIP 생활관 4, 6, 12개월
-                                <br/>제 2 생활관은 6, 12개월만 가능합니다.
-                            </p>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 룸 유형 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">룸 유형을
-                            <br/>선택해 주세요!
-                        </h2>
-                        <div>
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-roomtype" checked>
-                                        <img src="/src/assets/images/ic-gender-0.png" alt="">
-                                        <p>
-                                            <span>2인실</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-roomtype">
-                                        <img src="/src/assets/images/ic-gender-1.png" alt="">
-                                        <p>
-                                            <span>4인실</span>
-                                        </p>
-                                    </label>
+                        <!-- 잠 버릇 여부 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">잠 버릇은
+                                <br/>있으신가요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep-habit">
+                                            <span>잠 버릇이 있다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep-habit">
+                                            <span>잠 버릇이 조금 있다</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep-habit">
+                                            <span>잠 버릇이 없다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-sleep-habit">
+                                            <span>기타</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 흡연여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">흡연여부를
-                            <br/>선택해 주세요!
-                        </h2>
-                        <div>
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-roomtype" checked>
-                                        <img src="/src/assets/images/ic-gender-0.png" alt="">
-                                        <p>
-                                            <span>흡연</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-roomtype">
-                                        <img src="/src/assets/images/ic-gender-1.png" alt="">
-                                        <p>
-                                            <span>비흡연</span>
-                                        </p>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
                             </div>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 취침시간 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">취침시간을
-                            <br/>선택해주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>이전</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>22시 ~ 23시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>23시 ~ 24시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>24시 ~ 01시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>01시 ~ 02시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>02시 ~ 03시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>이후</span>
-                                    </label>
+                        <!-- 공부 장소 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">공부할 때
+                                <br/>어디서 하나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-study">
+                                            <span>기숙사 방에서</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-study">
+                                            <span>기숙사 외에서</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-study">
+                                            <span>기타</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 기상시간 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">기상시간을
-                            <br/>선택해주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>이전</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>06시 ~ 07시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>07시 ~ 08시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>08시 ~ 09시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>09시 ~ 10시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>10시 ~ 11시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-wake">
-                                        <span>이후</span>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
                             </div>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 배달 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">배달을 얼마나
-                            <br/>자주 시켜드시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-freq">
-                                        <span>주 0회</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-freq">
-                                        <span>주 1회 ~ 주 2회</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-freq">
-                                        <span>주 3회 ~ 주 4회</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-freq">
-                                        <span>주 5회 이상</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-freq">
-                                        <span>협의가능</span>
-                                    </label>
+                        <!-- 공부 장소 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">벌레를
+                                <br/>잡을 수 있나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-worm">
+                                            <span>모든 벌레를 잡을 수 있다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-worm">
+                                            <span>큰 벌레만 잡을 수 있다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-worm">
+                                            <span>작은 벌레만 잡을 수 있다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-worm">
+                                            <span>모든 벌레를 잡을 수 없음.</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 배달시간 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">배달을 주로
-                            <br/>어느 시간대에 받으시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>없음</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>0시 ~ 4시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>4시 ~ 8시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>8시 ~ 12시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>12시 ~ 16시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>16시 ~ 20시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>20시 ~ 24시</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-dlv-time">
-                                        <span>협의가능</span>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button class="btn bg-primary gotoNext">다음</button>
                             </div>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 룸 내 식사 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">방 안 식사 여부에 대해를
-                            <br/>알려주세요!
-                        </h2>
-                        <div>
-                            <div class="ipt">
-                                <div class="col-2">
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-meals" checked>
-                                        <img src="/src/assets/images/ic-gender-0.png" alt="">
-                                        <p>
-                                            <span>방 안 식사</span>
-                                        </p>
-                                    </label>
-                                    <label class="type-shape">
-                                        <input type="radio" name="st-meals">
-                                        <img src="/src/assets/images/ic-gender-1.png" alt="">
-                                        <p>
-                                            <span>방 안 식사 금물</span>
-                                        </p>
-                                    </label>
+                        <!-- 본가 방문 주기 -->
+                        <div class="rm-match-section swiper-slide">
+                            <h2 class="title">본가 방문 주기는
+                                <br/>어떻게 되시나요?
+                            </h2>
+                            <div class="hasScroll">
+                                <div class="ipt">
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-home-visit">
+                                            <span>매주 간다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-home-visit">
+                                            <span>격주로 간다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-home-visit">
+                                            <span>3주에 한 번 간다.</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="type-radio">
+                                            <input type="radio" name="st-home-visit">
+                                            <span>한 달에 한 번 간다.</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="dscpt-information">
-                            <p>배달 주문 후 기숙사 방 안에서 식사 여부에 대해 체크해주세요</p>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 샤워시간 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">배달을 주로
-                            <br/>어느 시간대에 받으시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-shower">
-                                        <span>아침</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-shower">
-                                        <span>점심</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-shower">
-                                        <span>저녁</span>
-                                    </label>
-                                </div>
+                            <div class="btn-wrap">
+                                <button type="submit" class="btn bg-primary">다음</button>
                             </div>
-                        </div>
-                        <div class="custom-range">
-                            <input type="range" name="st-time-shower" list="st-time-shower-data"/>
-                            <datalist id="st-time-shower-data">
-                                <option value="0" label="0"></option>
-                                <option value="25" label="25"></option>
-                                <option value="50" label="50"></option>
-                                <option value="75" label="75"></option>
-                                <option value="100" label="100"></option>
-                            </datalist>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 긱사 내 게임 여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">기숙사 방 안
-                            <br/>게임 여부를 알려주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-game">
-                                        <span>게임을 한다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-game">
-                                        <span>게임을 가끔 한다</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-game">
-                                        <span>게임을 안한다.</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-range">
-                            <p class="title">내가 생각하는 나의 소음 정도는?</p>
-                            <p class="dscpt">*소음 : 기계식 키보드, 무분별한 통화</p>
-                            <input type="range" name="st-time-game" list="st-time-game-data"/>
-                            <datalist id="st-time-game-data">
-                                <option value="0" label="0"></option>
-                                <option value="25" label="25"></option>
-                                <option value="50" label="50"></option>
-                                <option value="75" label="75"></option>
-                                <option value="100" label="100"></option>
-                            </datalist>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 긱사 내 디코 여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">기숙사 방 안
-                            <br/>디스코드(음성 서비스)
-                            <br/>사용 여부를 알려주세요!
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-discord">
-                                        <span>디스코드(음성 서비스)를 한다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-discord">
-                                        <span>디스코드(음성 서비스)를 가끔 한다</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-discord">
-                                        <span>디스코드(음성 서비스)를 안한다.</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-range">
-                            <p class="title">내가 생각하는 나의 소음 정도는?</p>
-                            <p class="dscpt">*소음 : 기계식 키보드, 무분별한 통화</p>
-                            <input type="range" name="st-time-discord" list="st-time-discord-data"/>
-                            <datalist id="st-time-discord-data">
-                                <option value="0" label="0"></option>
-                                <option value="25" label="25"></option>
-                                <option value="50" label="50"></option>
-                                <option value="75" label="75"></option>
-                                <option value="100" label="100"></option>
-                            </datalist>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 더위 여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">더위는
-                            <br/>얼마나 타시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-hot">
-                                        <span>더위를 탄다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-hot">
-                                        <span>더위를 조금 탄다</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-hot">
-                                        <span>더위를 안탄다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-hot">
-                                        <span>기타</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 추위 여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">추위는
-                            <br/>얼마나 타시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-cold">
-                                        <span>추위를 탄다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-cold">
-                                        <span>추위를 조금 탄다</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-cold">
-                                        <span>추위를 안탄다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-cold">
-                                        <span>기타</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 잠귀 여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">잠귀는
-                            <br/>얼마나 밝으시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>잠귀가 밝다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>잠귀가 조금 밝다</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>잠귀가 안밝다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep">
-                                        <span>기타</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 잠 버릇 여부 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">잠 버릇은
-                            <br/>있으신가요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep-habit">
-                                        <span>잠 버릇이 있다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep-habit">
-                                        <span>잠 버릇이 조금 있다</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep-habit">
-                                        <span>잠 버릇이 없다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-sleep-habit">
-                                        <span>기타</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 공부 장소 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">공부할 때
-                            <br/>어디서 하나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-study">
-                                        <span>기숙사 방에서</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-study">
-                                        <span>기숙사 외에서</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-study">
-                                        <span>기타</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 공부 장소 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">벌레를
-                            <br/>잡을 수 있나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-worm">
-                                        <span>모든 벌레를 잡을 수 있다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-worm">
-                                        <span>큰 벌레만 잡을 수 있다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-worm">
-                                        <span>작은 벌레만 잡을 수 있다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-worm">
-                                        <span>모든 벌레를 잡을 수 없음.</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="btn bg-primary gotoNext">다음</button>
-                        </div>
-                    </div>
-                    <!-- 본가 방문 주기 -->
-                    <div class="rm-match-section swiper-slide">
-                        <h2 class="title">본가 방문 주기는
-                            <br/>어떻게 되시나요?
-                        </h2>
-                        <div class="hasScroll">
-                            <div class="ipt">
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-home-visit">
-                                        <span>매주 간다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-home-visit">
-                                        <span>격주로 간다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-home-visit">
-                                        <span>3주에 한 번 간다.</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="type-radio">
-                                        <input type="radio" name="st-home-visit">
-                                        <span>한 달에 한 번 간다.</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button type="submit" class="btn bg-primary gotoNext">다음</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
         <footer></footer>
     </div>
