@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
         centeredSlides: true,
         spaceBetween: 30,
-        // loop: true,
+        loop: true,
 
         navigation: {
           nextEl: '.gotoNext',

@@ -10,6 +10,7 @@
     color: v.$black-600;
     padding-top: 30px;
     margin-top: 16px; // 임시로 넣은거
+    // 나중에 after의 배경으로 아이콘 집어넣기
     &::before{
         content: "";
         position: absolute;
@@ -27,3 +28,26 @@
         left: 20px;
     }
 }
+
+
+.container {
+    position: relative;
+    width: 500px;
+    margin: 50px auto;
+  }
+
+  .slider-label {
+    position: absolute;
+    transform: translateY(-17%);
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    text-align: center;
+    width: 71px;
+    pointer-events: none;
+  }
+
+  .slider {
+    width: 100%;
+    margin-top: 20px;
+  }

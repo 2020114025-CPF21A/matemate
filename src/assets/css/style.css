@@ -313,6 +313,28 @@ http://scripts.sil.org/OFL
   left: 20px;
 }
 
+.container {
+  position: relative;
+  width: 500px;
+  margin: 50px auto;
+}
+
+.slider-label {
+  position: absolute;
+  transform: translateY(-17%);
+  font-size: 14px;
+  color: black;
+  background: transparent;
+  text-align: center;
+  width: 71px;
+  pointer-events: none;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 20px;
+}
+
 .rm-match-wrap .title {
   flex: 0 0 162px;
   font: 700 28px/32px "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -333,6 +355,9 @@ http://scripts.sil.org/OFL
 }
 .rm-match-section .btn-wrap .btn {
   flex: 1;
+}
+.rm-match-section > div:has(.ipt:only-child) {
+  align-content: center;
 }
 
 #root {
